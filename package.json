@@ -1,0 +1,15 @@
+{
+  "name": "atlas-control-suite",
+  "version": "1.4.0",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "setup": "node scripts/setup.js",
+    "check": "node --check server.js && node --check scripts/setup.js && node --test tests/*.test.js",
+    "admin:rotate": "node scripts/rotate-admin.js"
+  }
+}
